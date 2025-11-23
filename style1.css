@@ -278,67 +278,96 @@ h1 {
     position: absolute;
     z-index: 100;
 }
-/* MOBILE (Max-width: 768px) */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
+
+@media only screen and (max-width: 430px) {
+
+    #box1 {
+        font-size: 22px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 5px;
+        display: block;
         text-align: center;
     }
 
-    .navbar nav {
-        margin-top: 10px;
+    .title {
+        font-size: 20px;
+        padding: 10px;
     }
 
-    .hero {
+    img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .Skills, .project {
         flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-img {
-        width: 180px;
-        margin-top: 20px;
-    }
-
-    .animated-text {
-        font-size: 32px;
-    }
-
-    .skills-container {
-        flex-direction: column;
-        gap: 15px;
         align-items: center;
     }
 
-    .skill-card {
+    .box, .box1, .box7 {
         width: 90%;
+        height: 120px;
+        font-size: 18px;
     }
 
-    .project-card {
-        width: 90%;
+    #CONTACT input, 
+    #CONTACT textarea {
+        width: 100%;
+    }
+
+    .top-btn-container {
+        right: 10px;
+        bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .Skills, .project {
+        gap: 30px;
+    }
+
+    .box, .box1, .box7 {
+        width: 45%;
+        height: 150px;
+        font-size: 20px;
+    }
+
+    img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    #CONTACT input, 
+    #CONTACT textarea {
+        width: 95%;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .box, .box1, .box7 {
+        width: 250px;
+        height: 180px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    img {
+        width: 200px;
         height: 200px;
-        margin: auto;
-    }
-
-    .contact-form {
-        width: 90%;
     }
 }
-
-/* TABLET (Max-width: 992px) - NOTE: 768px is repeated, so only keeping the broader rules here */
-@media (max-width: 992px) { /* Changed this to 992px to cover a broader tablet range */
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-img {
-        width: 240px;
-        margin-top: 20px;
-    }
-
-    .skills-container {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
