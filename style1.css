@@ -278,3 +278,67 @@ h1 {
     position: absolute;
     z-index: 100;
 }
+/* MOBILE (Max-width: 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar nav {
+        margin-top: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img {
+        width: 180px;
+        margin-top: 20px;
+    }
+
+    .animated-text {
+        font-size: 32px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .skill-card {
+        width: 90%;
+    }
+
+    .project-card {
+        width: 90%;
+        height: 200px;
+        margin: auto;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
+
+/* TABLET (Max-width: 992px) - NOTE: 768px is repeated, so only keeping the broader rules here */
+@media (max-width: 992px) { /* Changed this to 992px to cover a broader tablet range */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img {
+        width: 240px;
+        margin-top: 20px;
+    }
+
+    .skills-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
