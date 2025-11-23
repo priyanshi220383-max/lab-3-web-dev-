@@ -1,0 +1,280 @@
+h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+ul {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(243, 242, 242);
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    position: relative;
+    left: 100px;
+}
+
+header {
+    background-color: rgb(0, 221, 255);
+    color: white;
+    text-align: right;
+    padding: 20px 0;
+    box-shadow: 0 4px 15px -2px gray;
+    position: relative;
+    top: 0;
+}
+
+#about {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px -2px gray;
+}
+
+#box1 {
+    background-color: rgb(0, 221, 255);
+    color: rgb(121, 9, 18);
+    position: relative;
+    right: 1100px;
+    top: 30px;
+}
+
+p {
+    text-align: center;
+}
+
+#ABOUT {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px -2px gray;
+}
+
+.Skills {
+    justify-content: space-between;
+    display: grid;
+    height: 50px;
+    border: 2px white;
+    grid-template-rows: repeat(1fr, 4);
+    grid-template-columns: repeat(1fr, 4);
+    color: rgb(36, 117, 144);
+}
+
+.box {
+    border: 2px solid black;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(179, 223, 234);
+
+}
+
+#box2:hover {
+    box-shadow: 10px 10px 200px;
+    color: blueviolet;
+    background-color: rgb(255, 213, 0);
+    cursor: pointer;
+}
+
+#box3:hover {
+    box-shadow: 10px 10px 200px;
+    color: blueviolet;
+    background-color: rgb(255, 213, 0);
+    cursor: pointer;
+}
+
+#box4:hover {
+    box-shadow: 10px 10px 200px;
+    color: blueviolet;
+    background-color: rgb(255, 213, 0);
+    cursor: pointer;
+}
+
+
+#box2 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+#box3 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+#box4 {
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+#SKILLS {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px -2px gray;
+}
+
+#PROJECT {
+    background-color: white;
+    padding: 90px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px -2px gray;
+
+}
+
+#img {
+    position: relative;
+    left: 900px;
+    top: -50px;
+}
+
+#intro {
+    position: relative;
+    right: 100px;
+    top: 50px;
+    color: rgba(rgb(92, 22, 163));
+}
+
+#box5,
+#box6 {
+    border: 2px solid black;
+    height: 350px;
+    width: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    text-align: center;
+}
+
+#box5 {
+    animation-name: cardbox;
+    position: relative;
+    left: 200px;
+}
+
+@keyframes cardbox {
+    0% {
+        background-image: url("bdy card.jpg");
+    }
+
+    100% {
+        background-image: url("admit card.jpg");
+    }
+}
+
+#box6 {
+    animation-name: projectcard;
+    position: relative;
+    top: 70px;
+    left: 200px
+}
+
+@keyframes projectcard {
+    0% {
+        background-image: url("calorie.jpg");
+    }
+
+    100% {
+        background-image: url("foodie.jpg");
+    }
+}
+
+#CONTACT {
+    background-color: white;
+    padding: 20px;
+    height: 300px;
+    width: 500px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px -2px gray;
+    text-align: center;
+    position: relative;
+    left: 340px;
+}
+
+
+
+#socialmedia {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px -2px gray;
+}
+
+.top-btn-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 18px;
+    background-color: rgb(32, 59, 126);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.top-btn:hover {
+    background-color: rgb(32, 59, 126);
+}
+
+h1 {
+    animation: colorChange 4s infinite;
+    position: relative;
+    top: 60px;
+    left: 200px;
+    size: large;
+}
+
+@keyframes colorChange {
+    0% {
+        color: black;
+    }
+
+    25% {
+        color: rgb(255, 230, 0);
+    }
+
+    50% {
+        color: rgb(0, 204, 255);
+    }
+
+    75% {
+        color: rgb(0, 255, 153);
+    }
+
+    100% {
+        color: rgb(181, 60, 175);
+    }
+}
+
+#button1 {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: large;
+    text-align: center;
+    position: relative;
+    left: 70px;
+    right: 40px;
+    bottom: auto;
+    position: absolute;
+    z-index: 100;
+}
